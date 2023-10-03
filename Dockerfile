@@ -1,6 +1,7 @@
 FROM eclipse-temurin:17-jre@sha256:e7ba39bd08d3c1761f610b737164abf964f0784589095fb7dfa1185010a3b70f
 
-RUN addgroup -S spring && adduser -S spring -G spring
+RUN addgroup spring
+RUN useradd -g spring spring
 USER spring:spring
 
 # https://github.com/microsoft/ApplicationInsights-Java/releases
