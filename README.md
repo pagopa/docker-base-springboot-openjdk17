@@ -1,1 +1,1 @@
-# docker-base-template
+# docker-base-template based on Java 17
