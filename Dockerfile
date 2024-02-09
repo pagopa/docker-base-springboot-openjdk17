@@ -5,7 +5,7 @@ RUN useradd -g spring spring
 USER spring:spring
 
 # https://github.com/microsoft/ApplicationInsights-Java/releases
-ADD --chown=spring:spring https://github.com/microsoft/ApplicationInsights-Java/releases/download/3.4.0/applicationinsights-agent-3.4.0.jar /applicationinsights-agent.jar
+ADD --chown=spring:spring https://github.com/microsoft/ApplicationInsights-Java/releases/download/3.4.19/applicationinsights-agent-3.4.19.jar /applicationinsights-agent.jar
 COPY --chown=spring:spring docker/applicationinsights.json ./applicationinsights.json
 
 EXPOSE 8080
