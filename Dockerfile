@@ -5,6 +5,7 @@ RUN useradd -g spring spring
 USER spring:spring
 
 # https://github.com/microsoft/ApplicationInsights-Java/releases
+# application insight 3.4.19
 ADD --chown=spring:spring https://github.com/microsoft/ApplicationInsights-Java/releases/download/3.4.19/applicationinsights-agent-3.4.19.jar /applicationinsights-agent.jar
 COPY --chown=spring:spring docker/applicationinsights.json ./applicationinsights.json
 
