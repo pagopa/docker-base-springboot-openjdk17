@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17-jre@sha256:e7ba39bd08d3c1761f610b737164abf964f0784589095fb7dfa1185010a3b70f
+FROM eclipse-temurin:17-jre@sha256:0adcf8486107fbd706de4b4fdde64c2d2e3ead4c689b2fb7ae4947010e1f00b4
 
 RUN addgroup spring
 RUN useradd -g spring spring
