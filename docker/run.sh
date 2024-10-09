@@ -1,11 +1,11 @@
 #!/bin/sh
 
-version=$(cat META-INF/MANIFEST.MF | grep -oP 'Spring-Boot-Version: \K[\d.]+')
-version_major=${version:0:1}
+spring_boot_version=$(cat ./META-INF/MANIFEST.MF | grep 'Spring-Boot-Version:' | cut -d ' ' -f 2)
+major_version=$(echo "$spring_boot_version" | cut -d '.' -f 1)
 
-# Check if the version_major is 3
-if [[ "$version_major" == "3" ]]; then
-exec java -javaagent:/applicationinsights-agent.jar ${JAVA_OPTS} org.springframework.boot.loader.launch.JarLauncher "$@"
+# Check if the major_version is 3
+if  [ "$major_version" -eq "3" ] ; then
+  exec java -javaagent:/applicationinsights-agent.jar ${JAVA_OPTS} org.springframework.boot.loader.launch.JarLauncher "$@"
 else
    exec java -javaagent:/applicationinsights-agent.jar ${JAVA_OPTS} org.springframework.boot.loader.JarLauncher "$@"
 fi

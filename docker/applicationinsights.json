@@ -9,6 +9,10 @@
       {
         "telemetryType": "exception",
         "percentage": 100
+      },
+      {
+        "telemetryType": "request",
+        "percentage": 100
       }
     ]
   }
