@@ -1,10 +1,10 @@
 {
+  "default": {
+    "disableAppMetrics": true
+  },
   "selfDiagnostics": {
     "destination": "console",
     "level": "INFO"
-  },
-  "default": {
-    "disableAppMetrics": true
   },
   "sampling": {
     "percentage": 5,
