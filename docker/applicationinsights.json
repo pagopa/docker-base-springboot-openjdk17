@@ -4,6 +4,12 @@
     "level": "INFO"
   },
   "instrumentation": {
+    "azureSdk": {
+      "enabled": false
+    },
+    "jms": {
+      "enabled": false
+    },
     "micrometer": {
       "enabled": false
     }
