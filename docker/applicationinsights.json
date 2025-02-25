@@ -3,6 +3,28 @@
     "destination": "console",
     "level": "INFO"
   },
+  "preview": {
+    "instrumentation": {
+      "micrometer": {
+        "enabled": false
+      },
+      "jvm": {
+        "enabled": false,
+        "gc": false,
+        "threads": false,
+        "memory": false
+      },
+      "logging": {
+        "enabled": false
+      },
+      "exceptions": {
+        "enabled": false
+      },
+      "jmxMetrics": {
+        "enabled": false
+      }
+    }
+  },
   "instrumentation": {
     "azureSdk": {
       "enabled": false
