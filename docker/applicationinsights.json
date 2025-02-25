@@ -3,6 +3,9 @@
     "destination": "console",
     "level": "INFO"
   },
+  "default": {
+    "disableAppMetrics": true
+  },
   "sampling": {
     "percentage": 5,
     "overrides": [
