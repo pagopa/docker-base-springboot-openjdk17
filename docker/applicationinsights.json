@@ -20,13 +20,23 @@
       },
       {
         "telemetryType": "request",
-        "percentage": 100,
+        "percentage": 0,
         "attributes": [
           {
             "key": "http.url",
             "value": ".*/actuator/health/.*",
-            "matchType": "regexp",
-            "negate": true
+            "matchType": "regexp"
+          }
+        ]
+      },
+      {
+        "telemetryType": "request",
+        "percentage": 100,
+        "attributes": [
+          {
+            "key": "http.url",
+            "value": ".*",
+            "matchType": "regexp"
           }
         ]
       }
