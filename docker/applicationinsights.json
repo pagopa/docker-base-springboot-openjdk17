@@ -1,10 +1,18 @@
 {
-  "default": {
-    "disableAppMetrics": true
-  },
   "selfDiagnostics": {
     "destination": "console",
     "level": "INFO"
+  },
+  "instrumentation": {
+    "azureSdk": {
+      "enabled": false
+    },
+    "jms": {
+      "enabled": false
+    },
+    "micrometer": {
+      "enabled": false
+    }
   },
   "sampling": {
     "percentage": 5,
