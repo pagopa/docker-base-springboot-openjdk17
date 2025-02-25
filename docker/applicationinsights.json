@@ -1,10 +1,12 @@
 {
-  "default": {
-    "disableAppMetrics": true
-  },
   "selfDiagnostics": {
     "destination": "console",
     "level": "INFO"
+  },
+  "instrumentation": {
+    "micrometer": {
+      "enabled": false
+    }
   },
   "sampling": {
     "percentage": 5,
